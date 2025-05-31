@@ -1,0 +1,39 @@
+{
+  "name": "dockpilot-docs",
+  "version": "1.0.0",
+  "description": "DockPilot Documentation - 简单易用的Docker管理工具文档",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "docker",
+    "container",
+    "management",
+    "web-ui",
+    "documentation",
+    "vitepress"
+  ],
+  "author": "DockPilot Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/dockpilot-docs.git"
+  },
+  "homepage": "https://your-username.github.io/dockpilot-docs",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.20"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}
