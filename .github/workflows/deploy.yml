@@ -6,13 +6,26 @@ on:
   pull_request:
     branches: [main]
 
+# 允许手动触发
+  workflow_dispatch:
+
+# 设置GITHUB_TOKEN权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   docs:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - name: Checkout
@@ -33,6 +46,8 @@ jobs:
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
+      with:
+        enablement: true
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
