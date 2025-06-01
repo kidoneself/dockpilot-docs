@@ -41,7 +41,7 @@ docker pull registry.example.com/my-app:v1.0
 ```
 
 ### 构建镜像
-```dockerfile
+```docker
 # 示例 Dockerfile
 FROM node:16-alpine
 WORKDIR /app

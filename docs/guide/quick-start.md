@@ -29,7 +29,7 @@ docker ps | grep dockpilot
    - **主内容区**：功能操作界面
    - **右上角**：系统状态和更新按钮
 
-![DockPilot主界面](../public/screenshots/dashboard.png)
+<!-- ![DockPilot主界面](../public/screenshots/dashboard.png) -->
 
 ## 🚢 Step 2: 容器管理
 
@@ -66,7 +66,7 @@ docker ps | grep dockpilot
 2. 在Web终端中执行命令
 3. 类似 `docker exec -it container_name /bin/bash`
 
-![容器管理界面](../public/screenshots/containers.png)
+<!-- ![容器管理界面](../public/screenshots/containers.png) -->
 
 ## 📦 Step 3: 镜像管理
 
@@ -97,8 +97,6 @@ docker ps | grep dockpilot
 3. 设置镜像名称和标签
 4. 点击 `开始构建`
 
-![镜像管理界面](../public/screenshots/images.png)
-
 ## 🏪 Step 4: 应用商店（推荐体验）
 
 应用商店是DockPilot的特色功能，让您一键部署常用应用。
@@ -128,7 +126,7 @@ docker ps | grep dockpilot
 2. 您应该看到Nginx的欢迎页面
 3. 可以在容器管理中查看新创建的nginx容器
 
-![应用商店界面](../public/screenshots/app-store.png)
+<!-- ![应用商店界面](../public/screenshots/app-store.png) -->
 
 ## 🔄 Step 5: 热更新体验
 
@@ -148,8 +146,6 @@ docker ps | grep dockpilot
 
 ### 更新日志
 查看更新内容，了解新功能和改进。
-
-![更新界面](../public/screenshots/update.png)
 
 ## 🌐 Step 6: 网络管理
 
